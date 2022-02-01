@@ -1,12 +1,12 @@
-
+import {Link} from 'react-router-dom'
 
 function Header(){
     return(
         <div>
             <header>
-            <a className="no-underline" href="/">
+            <Link className="no-underline"  to={'/'}>
                 <p className="home-icon">O.A</p>
-            </a>
+            </Link>
             <div id="top-bar" className="nav-id">
                 <a href="https://www.blog.oladiniabayomi.com" target="_blank">BLOG</a>
             </div>

@@ -1,9 +1,10 @@
+import {Link} from 'react-router-dom'
 function WorkSection (){
     return(
         <div className="work-section">
                 <p className="section-headline section-text">Some of my works</p>
                 <div className="work-content">
-                    <a href="/spiinge.html" className="no-underline" >
+                    <Link to="/work/spiinge" className="no-underline" >
                     <div className="work-single-content">
                         <img className="work-image" src="images/spiinge.jpg" />
                         <p className="work-title item-header">Spiinge</p>
@@ -11,7 +12,7 @@ function WorkSection (){
                             track the product development stage.
                         </p>
                     </div>
-                    </a>
+                    </Link>
                     <a href="/hacker-news-clone.html" className="no-underline">
                     <div className="work-single-content">
                         <img className="work-image" src="images/hacker-news.jpg"/>

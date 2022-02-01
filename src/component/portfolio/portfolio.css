@@ -1,0 +1,45 @@
+
+.blog-section{
+    margin: 50px 0px 0px 0px;
+    max-width: 1200px;
+}
+
+.blog-image{
+    max-width: 1200px;
+    width: 100%;
+}
+
+.blog-title{
+    font-size: 28px;
+}
+
+img{
+    max-width: 1200px;
+    width: 100%;
+
+}
+
+
+.small-heading{
+    margin: 20px 0px 10px 0px;
+    font-weight: bold;
+}    
+
+.section-space-divider{
+    margin: 0px 0px 60px 0px;
+}
+
+/* Small Breakpoint */
+@media screen and (min-width: 580px){
+    .external-link-section{
+        /* display: flex;
+        justify-content: space-between; */
+    }
+    
+  }
+
+
+.footer-text{
+    margin: 60px auto;
+    max-width: 300px;
+}
