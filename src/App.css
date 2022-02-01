@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+html {
+    font-size: 100%;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+/* 
+@font-face {
+    font-family: Nunito;
+    src: url(/fonts/Nunito/Nunito-Regular.ttf);
+}
+@font-face {
+    font-family: Nunito sans;
+    src: url(/fonts/Nunito\ sans/NunitoSans-Regular.ttf);
+} 
+
+@font-face {
+    font-family: Nunito;
+    src: url(/fonts/Nunito/Nunito-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Nunito sans;
+    src: url(/fonts/Nunito\ sans/NunitoSans-Bold.ttf);
+    font-weight: bold;
+} */
+
+body{
+    background-color: white;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #ffffff; 
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+    line-height: 2.0;
 }
 
-.App-link {
-  color: #61dafb;
+img{
+    margin: auto;
+    max-width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.no-underline{
+    /* margin: 20px; */
+    color: black;
+    text-decoration: none;
+}
+ 
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-icon{
+    margin: 5px 10px 0px 15px;
+    font-size: 42px;
+    font-weight: 550;
+    color: #031E47;
+}
+
+.nav-id{
+    display: flex;
+    margin-right: 25px;
+}
+
+.nav-id a{
+    margin: 20px;
+    color: #031E47;
+    text-decoration: none;
+}
+
+.content{
+    margin: auto;
+    max-width: 300px;
+}
+
+.value-prop{
+    margin: 10px 0px 20px 0px;
+}
+
+.large-text{
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 120px 0px 15px 0px;
+}
+
+.subtitle{
+    margin: 10px 0px 60px 0px;
+}
+
+.headline-image{
+    margin: 70px 0px 100px 0px;
+}
+
+.work-section{
+    margin: 20px 0px 20px 0px;
+}
+
+.work-content{
+    margin: 60px 0px 20px 0px;
+}
+
+
+.work-single-content{
+    margin: 60px 0px 20px 0px;
+}
+
+.work-single-content:hover{
+    /* box-shadow: 0 0 11px rgba(33,33,33,.2);  */
+}
+
+
+.large-text .section-text .footer-text{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
+.section-text{
+    margin: 140px 0px 60px 0px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.item-header{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 30px 0px 0px 0px;
+}
+
+.work-subtitle{
+    margin: 5px 0px 100px 0px;   
+    line-height: 2.0;
+}
+
+.footer-text {
+    margin: 40px 0px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text{
+    font-weight: bold;
+}
+
+
+
+/* Small Breakpoint */
+@media screen and (min-width: 580px){
+    .content {
+      max-width: 550px;
+    }
+    img{
+        margin: auto;
+        width: 100%;
+        max-width: 560px;
+    }
+    
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+  /* Large Breakpoint */
+  @media screen and (min-width: 1100px){
+    .container .content{
+      margin: auto;
+      width: 100%;
+      max-width: 1100px;
+    } 
+    img{
+        margin: auto;
+        width: 100%;
+        max-width: 520px;
+    }
+    
+    .value-prop{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .headline-section{
+        max-width: 550px;
+    }
+
+    .large-text{
+        font-size: 54px;
+    }
+    .subtitle {
+        margin: 40px 45px 60px 0px;
+        font-size: 18px;
+        line-height: 2.0;
+    }
+
+    .headline-image{
+        margin: 60px 0px 100px 0px;
+        max-width: 500px;
+    }
+
+    
+    .section-text{
+        margin: 140px 0px 30px 0px;
+        font-size: 38px;
+        font-weight: bold;
+    }
+
+
+    .work-content{
+        display: flex;
+        width: 100%;
+        max-width: 1200px;
+        justify-content: space-between;
+        /* flex-wrap: nowrap; */
+        /* flex-grow: 1; */
+
+    }
+
+    .work-single-content{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .work-single-content{
+        /* margin: 0px 200px 20px 0px; */
+    }
+
+    
+
+    .footer-text{
+        margin: auto;
+        max-width: 300px;
+    }
+
+
 }
