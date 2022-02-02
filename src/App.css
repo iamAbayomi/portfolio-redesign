@@ -166,13 +166,27 @@ header{
     }
     
   }
+
+  /* Small Breakpoint */
+@media screen and (min-width: 880px){
+    .content {
+      max-width: 780px;
+    }
+    img{
+        margin: auto;
+        width: 100%;
+        max-width: 560px;
+    }
+    
+  }
+  
   
   /* Large Breakpoint */
   @media screen and (min-width: 1100px){
     .container .content{
       margin: auto;
       width: 100%;
-      max-width: 1100px;
+      max-width: 1200px;
     } 
     img{
         margin: auto;
