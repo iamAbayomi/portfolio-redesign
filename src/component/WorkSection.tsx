@@ -1,5 +1,10 @@
+import { useEffect } from 'react'
 import {Link} from 'react-router-dom'
+import { content } from '../content'
 function WorkSection (){
+    useEffect(() => {
+        console.log("Content ", content[0])
+    })
     return(
         <div className="work-section">
                 <p className="section-headline section-text">Some of my works</p>
