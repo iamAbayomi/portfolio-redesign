@@ -13,10 +13,8 @@ function App() {
   return (
     <Router>
     <div className="App">
-      <head>
         <Links/>
-      </head>
-      <body className='container'>
+      <div className='container'>
           <Header />
           <div className='content'>
               <Switch>
@@ -25,7 +23,7 @@ function App() {
               </Switch>
               <Footer/>
           </div>
-      </body>
+      </div>
     </div>
     </Router>
   );
