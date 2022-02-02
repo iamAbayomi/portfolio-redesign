@@ -1,3 +1,5 @@
+import './portfolio.css'
+
 function PortfolioPage (){
     return(
         <div className="blog-section">
