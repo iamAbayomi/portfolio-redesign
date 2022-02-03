@@ -231,13 +231,12 @@ header{
         width: 100%;
         max-width: 1200px;
         justify-content: space-between;
-        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
         /* flex-grow: 1; */
 
     }
 
     .work-single-content{
-        width: 100%;
         max-width: 500px;
     }
 
