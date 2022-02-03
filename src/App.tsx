@@ -19,7 +19,7 @@ function App() {
           <div className='content'>
               <Switch>
                 <Route  exact path="/" component={Homepage} />
-                <Route path="/work/:workid" component={PortfolioPage}  />
+                <Route path="/work/:pageUrl" component={PortfolioPage}  />
               </Switch>
               <Footer/>
           </div>
