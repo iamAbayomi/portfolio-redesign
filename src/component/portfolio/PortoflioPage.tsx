@@ -1,6 +1,12 @@
+import { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import './portfolio.css'
 
 function PortfolioPage (){
+    const params = useParams()
+    useEffect(()=>{
+        console.log('This is the params ', params)
+    })
     return(
         <div className="blog-section">
                 <div className="blog-single-content">
